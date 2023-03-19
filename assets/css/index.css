@@ -17,27 +17,90 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: solid black 5px;
 }
 
-.panel_menu_contactos__nombre {
+.panel__menu__contactos__nombre {
   width: 100%;
-  height: 180px;
-  border: solid black 5px;
-
+  padding: 15px 25px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: solid lightslategray 1px;
 }
 
-.panel_menu_contactos__nombre img {
-  width: 45px;
+.panel__menu__contactos__nombre img {
+  width: 65px;
   border-radius: 100%;
-  
 }
-.panel_menu_contactos__msj {
-  border: solid yellow 5px;
-}
-.panel_menu_contactos__contacto {
-  border: solid blue 5px;
 
+.panel__menu_contactos__nombre--data {
+ flex-grow: 1;
+}
+
+.panel__menu__contactos__nombre--data h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.panel__menu__contactos__nombre--data p {
+  font-size: 10px;
+  color: #7b7b7b;
+}
+
+.panel__menu__contactos__nombre--data {
+}
+.panel__menu__contactos__nombre--ico {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40%;
+  gap:10px
+}
+
+.panel__menu__contactos__nombre--ico i {
+  font-size: 20px;
+}
+
+.panel__menu__contactos__msj {
+  display: flex;
+  padding: 30px 50px;
+  justify-content: center;
+  border: solid lightslategray 1px;
+
+}
+
+.btn {
+  padding: 10px 35px;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+
+
+.btn-purple {
+  padding: 10px 50px;
+  background-color: #a491d2;
+  color:white;
+
+}
+
+.btn-purple:hover {
+background-color: #d2919f;
+box-shadow: 3px 10px 15px #575757;
+}
+
+.btn-purple:focus {
+  background-color: #bec188;
+  box-shadow: 1px 4px 15px #575757;
+}
+
+
+.font-medium {
+  font-size: 20px;
+}
+
+.panel__menu__contactos__contacto {
+  border: solid blue 5px;
 }
 
 .panel__chat {
@@ -46,9 +109,31 @@
   border: solid red 5px;
 }
 
+.panel__menu_contactos__contacto--data {
+  display: flex;
+  align-items: center;
+  border: solid lightslategray 1px;
+  gap: 10px;
+}
+
+.panel__menu_contactos__contacto--data img{
+  width: 65px;
+  border-radius: 100%;
+}
+
+.panel__menu_contactos__contacto--data h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.panel__menu_contactos__contacto--data p {
+  font-size: 10px;
+  color: #7b7b7b;
+}
+
+
 @media (min-width: 768px) {
-  .panel__menu
-  {
+  .panel__menu {
     width: 250px;
   }
 
