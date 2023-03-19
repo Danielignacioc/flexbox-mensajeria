@@ -15,9 +15,31 @@
 .panel__menu {
   width: 100%;
   height: 100vh;
-/*   max-width: 250px; */
+  display: flex;
+  flex-direction: column;
   border: solid black 5px;
 }
+
+.panel_menu_contactos__nombre {
+  width: 100%;
+  height: 180px;
+  border: solid black 5px;
+
+}
+
+.panel_menu_contactos__nombre img {
+  width: 45px;
+  border-radius: 100%;
+  
+}
+.panel_menu_contactos__msj {
+  border: solid yellow 5px;
+}
+.panel_menu_contactos__contacto {
+  border: solid blue 5px;
+
+}
+
 .panel__chat {
   width: 100%;
   display: none;
@@ -27,7 +49,7 @@
 @media (min-width: 768px) {
   .panel__menu
   {
-    max-width: 250px;
+    width: 250px;
   }
 
   .panel__chat {
