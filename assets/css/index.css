@@ -52,7 +52,7 @@
 .panel__menu__contactos__nombre--ico {
   display: flex;
   flex-direction: row;
-  margin-left: 40%;
+  margin-left: 10%;
   gap:10px
 }
 
@@ -106,7 +106,6 @@ box-shadow: 3px 10px 15px #575757;
 .panel__chat {
   width: 100%;
   display: none;
-  border: solid red 5px;
 }
 
 .panel__menu_contactos__contacto--data {
